@@ -1,6 +1,9 @@
 <html>
-
     <header>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,55 +13,120 @@
     </header>
 
     <body>
+        <div class="container">
+            <h3> I: Identificación:</h3>
+            <label> Fecha:</label>
+            <input type="date" name="fecha">
 
-        <h3> I: Identificación:</h3>
-        <label> Fecha:</label>
-        <input type="date" name="fecha">
+            <div>
+                <label> Nombre Completo:</label>
+                <input type="text" name="nombre">
+            </div>
 
-        <div>
-            <label> Nombre Completo:</label>
-            <input type="text" name="nombre">
-        </div>
+            <div>
+                <label> Correo Electronico:</label>
+                <input type="text" name="correo">
+            </div>
 
-        <div>
-            <label> Correo Electronico:</label>
-            <input type="text" name="correo">
-        </div>
+            <div>
+                <label> Nacionalidad:</label>
+                <select name="nacinalidades" id="">
+                    <option> --- </option>
+                    <option> Costa Rica </option>
+                    <option> Panamá </option>
+                </select>
+            </div>
 
-        <div>
-            <label> Nacionalidad:</label>
-            <select name="nacinalidades" id="">
-                <option> --- </option>
-                <option> Costa Rica </option>
-                <option> Panamá </option>
-            </select>
-        </div>
+            <div>
+                <label> Edad:</label>
+                <input type="number" name="edad">
+            </div>
 
-        <div>
-            <label> Edad:</label>
-            <input type="number" name="edad">
-        </div>
+            <div>
+                <label> Sexo:</label>
+                <input type="radio" name="s" > M
+                <input type="radio" name="s" > F
+            </div>
 
-        <div>
-            <label> Sexo:</label>
-            <input type="radio" name="s" > M
-            <input type="radio" name="s" > F
-        </div>
+            <div>
+                <label> Estado Civil:</label>
+                <input type="text" name="edad">
+            </div>
 
-        <div>
-            <label> Estado Civil:</label>
-            <input type="text" name="edad">
-        </div>
+            <div>
+                <label> Cedula:</label>
+                <input type="number" name="edad">
+            </div>
 
-        <div>
-            <label> Cedula:</label>
-            <input type="number" name="edad">
-        </div>
-
-        <table> 
             
-        </table>
-
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> &nbsp Estudiante Regular
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div>
+                                <label>Carrera:
+                                <input type="text" name="carrera">
+                            </div>
+                            <div>
+                                <label>Nivel:
+                                <input type="text" name="nivel">
+                            </div>
+                            <div>
+                                <label>Carnet:
+                                <input type="text" name="carnet">
+                            </div>
+                            <div>
+                                <input type="radio" name="tipo"><label> &nbsp Renovación.
+                                <input type="radio" name="tipo"><label> &nbsp Solicitud
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> &nbsp Estudiante regular que solicita beca por 1 vez o estudiante regular que no está actualmente matriculado
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div>
+                                <label>Carrera:
+                                <input type="text" name="carrera">
+                            </div>
+                            <div>
+                                <label>Nivel:
+                                <input type="text" name="nivel">
+                            </div>
+                            <div>
+                                <label>Carnet:
+                                <input type="text" name="carnet">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> &nbsp Estudiante de Primer Ingreso
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div>
+                                <label>Carrera:
+                                <input type="text" name="carrera">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </div>        
 
     </body>
 
