@@ -16,21 +16,21 @@
         <div class="container">
             <h3> I: Identificación:</h3>
             <label> Fecha:</label>
-            <input type="date" name="fecha">
+            <input type="date" class="form-control" name="fecha">
 
             <div>
                 <label> Nombre Completo:</label>
-                <input type="text" name="nombre">
+                <input type="text" class="form-control" name="nombre">
             </div>
 
             <div>
                 <label> Correo Electronico:</label>
-                <input type="text" name="correo">
+                <input type="text" class="form-control" name="correo">
             </div>
 
             <div>
                 <label> Nacionalidad:</label>
-                <select name="nacinalidades" id="">
+                <select name="nacinalidades" id="" class="form-control">
                     <option> --- </option>
                     <option> Costa Rica </option>
                     <option> Panamá </option>
@@ -39,23 +39,29 @@
 
             <div>
                 <label> Edad:</label>
-                <input type="number" name="edad">
+                <input type="number" class="form-control" name="edad">
             </div>
 
             <div>
                 <label> Sexo:</label>
-                <input type="radio" name="s" > M
-                <input type="radio" name="s" > F
+                <input type="radio" class="form-inline" name="s" > &nbsp M &nbsp
+                <input type="radio" class="form-inline" name="s" > &nbsp F
             </div>
 
             <div>
                 <label> Estado Civil:</label>
-                <input type="text" name="edad">
+                <select name="est_civil" class="form-control">
+                    <option> Soltero </option>
+                    <option> Casado </option>
+                    <option> Divorsiado </option>
+                    <option> Unión Libre </option>
+                    <option> Viudo (a) </option>
+                </select>
             </div>
 
             <div>
                 <label> Cedula:</label>
-                <input type="number" name="edad">
+                <input type="number" class="form-control" name="edad">
             </div>
 
             
@@ -81,7 +87,7 @@
                                 <input type="text" name="carnet">
                             </div>
                             <div>
-                                <input type="radio" name="tipo"><label> &nbsp Renovación.
+                                <input type="radio" name="tipo"><label> &nbsp Renovación.&nbsp
                                 <input type="radio" name="tipo"><label> &nbsp Solicitud
                             </div>
                         </div>
