@@ -19,6 +19,7 @@ header a img{
     height: 90px;
 }
 
+
 .image_carrucel{
     width: 75%;
     margin: 0 auto;
@@ -37,6 +38,10 @@ footer{
       color:#000;
       margin-top: 2%;
       
+}
 
-
+.desing{
+    float: right;
+    border-radius:15px;
+    background-color: #D3D3D3 ;
 }
