@@ -1,5 +1,5 @@
 <html>  
-    <head>
+    <header>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,100 +10,112 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          
         <title> Formulario de Becas - CUC </title>
-      <img src="./img/header2.jpg" id="baner">
+        <img src="./img/header2.jpg" id="baner">
 
-    </head>
-        <h2> Colegio Universitario de Cartago </h2>
-        <h2> Bienestar estudiantil y calidad de vidda </h2>
-        <h2> Trabajo Social </h2>
-        <h2> Resumen Situación Socio-Economica</h2>
-
-        <div name="Formulario">
-
-            <div>
-                <Label> Fecha de entrega del Formulario: </Label> <br>
-                <input type="text" name="fech_entrega" value="" >
-            </div>
-
-            <div>
-                <Label> Nombre Completo: </Label> <br>
-                <input type="text" name="nombre" value="" >
-            </div>
-
-            <div>
-                <Label> Correo Electronico: </Label> <br>
-                <input type="text" name="correo" value="" >
-            </div>
-            <br>
-            <div>
-                <input type="radio" name="reg" value="" >
-                <Label> Estudiante Regular, matriculado actualmente en el CUC. </Label> <br>
-            </div>
-
-            <div>
-                <input type="radio" name="reg" value="" >
-                <Label> Estudiante Regular, matriculado actualmente en el CUC que solicita beca por 1 vez. </Label> <br>
-            </div>
-
-            <div>
-                <input type="radio" name="reg" value="" >
-                <Label> Estudiante Primer Ingreso, no ha ingresado al CUC. </Label> <br>
-            </div>
-
-            <br>
-
-            <div>
-                <Label> Fecha de entrega del Formulario: </Label> <br>
-                <input type="text" name="fech_entrega" value="" >
-            </div>
-           
-            <div>
-                <Label> Carrera: </Label> <br>
-                <input type="text" name="carrera" value="" >
-            </div>
-
-            <div>
-                <Label> Nivel: </Label> <br>
-                <input type="text" name="nivel" value="" >
-            </div>
-
-            <div>
-                <Label> Carne: </Label> <br>
-                <input type="text" name="carne" value="" >
-            </div>
-
-            <div>
-                <Label> Promedio Academico: </Label> <br>
-                <input type="text" name="promedio" value="" >
-            </div>
-
-            <div>
-                <Label> Cédula: </Label> <br>
-                <input type="text" name="cedula" value="" >
-            </div>
-
-            <div>
-                <Label> Disfrutó de Beca: </Label> <br>
-                <input type="text" name="beca_s_n" value="" >
-            </div>
-
-            <div>
-                <Label> Tipo e Beca: </Label> <br>
-                <input type="text" name="t_beca" value="" >
-            </div>
-
-            <div>
-                <Label> Lugar: </Label> <br>
-                <input type="text" name="lugar" value="" >
-            </div>
-
-            <div>
-                <Label> Monto: </Label> <br>
-                <input type="text" name="monto" value="" >
-            </div>
-        </div>
+    </header>
 
     <body>
+
+        <center> <h4> Colegio Universitario de Cartago </h4> </center>
+        <center> <h4> Bienestar estudiantil y calidad de vidda </h4> </center>
+        <center> <h4> Trabajo Social </h4> </center>
+        <center> <h4> Resumen Situación Socio-Economica</h4> </center>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-9">
+                    <Label> Fecha de entrega del Formulario: </Label> <br>
+                    <input type="date" name="fech_entrega" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Nombre Completo: </Label> <br>
+                    <input type="text" name="nombre" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Cédula: </Label> <br>
+                    <input type="text" name="cedula" value="" class="form-control" >
+                </div>
+
+                <div>
+                    <Label> Correo Electronico: </Label> <br>
+                    <input type="text" name="correo" value="" class="form-control" >
+                </div>
+                <br>
+                <div>
+                    <input type="radio" name="reg" value="" >
+                    <Label> Estudiante Regular, matriculado actualmente en el CUC. </Label> <br>
+                </div>
+
+                <div>
+                    <input type="radio" name="reg" value="" >
+                    <Label> Estudiante Regular, matriculado actualmente en el CUC que solicita beca por 1 vez. </Label> <br>
+                </div>
+
+                <div>
+                    <input type="radio" name="reg" value="" >
+                    <Label> Estudiante Primer Ingreso, no ha ingresado al CUC. </Label> <br>
+                </div>
+
+                <br>
+            
+                <div class="col-md-6">
+                    <Label> Carrera: </Label> <br>
+                    <select class="form-control" > 
+                        <option value="">Tecnologias de Información</option>
+                        <option value="">Electrónica</option>
+                        <option value="">Investigación Criminal</option>
+                        <option value="">Mecánica Dental</option>
+                        <option value="">Turismo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Nivel: </Label> <br>
+                    <select value="" class="form-control" >
+                        <option value=""> Nivel 1 </option>
+                        <option value=""> Nivel 2 </option>
+                        <option value=""> Nivel 3 </option>
+                        <option value=""> Nivel 4 </option>
+                        <option value=""> Nivel 5 </option>
+                        <option value=""> Nivel 6 </option>
+
+                    </select>
+                </div>
+                <br><br><br><br>
+                <div class="col-md-6">
+                    <Label> Carnet: </Label> <br>
+                    <input type="text" name="carnet" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Promedio Academico: </Label> <br>
+                    <input type="number" name="promedio" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6 form-inline">
+                    <Label> Disfrutó de Beca: </Label> <br>
+                    <input type="radio" name="beca_s_n" value="" > &nbsp Si &nbsp
+                    <input type="radio" name="beca_s_n" value="" > &nbsp No
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Tipo de Beca: </Label> <br>
+                    <input type="text" name="t_beca" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Lugar: </Label> <br>
+                    <input type="text" name="lugar" value="" class="form-control" >
+                </div>
+
+                <div class="col-md-6">
+                    <Label> Monto: </Label> <br>
+                    <input type="number" name="monto" value=""class="form-control"  >
+                </div>
+            </div>
+        </div>
         
     </body>
 
