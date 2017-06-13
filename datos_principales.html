@@ -14,131 +14,142 @@
 
     <body>
         <div class="container">
-            <h3> I: Identificación:</h3>
-            <label> Fecha:</label>
-            <input type="date" class="form-control" name="fecha">
+            <div class="row">
+                <h3> I: Identificación:</h3>
+                <div class="col-md-3 col-md-offset-9">
+                    <label> Fecha:</label>
+                    <input type="date" class="form-control" name="fecha">
+                </div>
+                <br>
+                <div>
+                    <label> Nombre Completo:</label>
+                    <input type="text" class="form-control" name="nombre">
+                </div>
 
-            <div>
-                <label> Nombre Completo:</label>
-                <input type="text" class="form-control" name="nombre">
-            </div>
+                <div>
+                    <label> Correo Electronico:</label>
+                    <input type="text" class="form-control" name="correo">
+                </div>
+                <br>
 
-            <div>
-                <label> Correo Electronico:</label>
-                <input type="text" class="form-control" name="correo">
-            </div>
-
-            <div>
-                <label> Nacionalidad:</label>
-                <select name="nacinalidades" id="" class="form-control">
-                    <option> --- </option>
-                    <option> Costa Rica </option>
-                    <option> Panamá </option>
-                </select>
-            </div>
-
-            <div>
-                <label> Edad:</label>
-                <input type="number" class="form-control" name="edad">
-            </div>
-
-            <div>
-                <label> Sexo:</label>
-                <input type="radio" class="form-inline" name="s" > &nbsp M &nbsp
-                <input type="radio" class="form-inline" name="s" > &nbsp F
-            </div>
-
-            <div>
-                <label> Estado Civil:</label>
-                <select name="est_civil" class="form-control">
-                    <option> Soltero </option>
-                    <option> Casado </option>
-                    <option> Divorsiado </option>
-                    <option> Unión Libre </option>
-                    <option> Viudo (a) </option>
-                </select>
-            </div>
-
-            <div>
-                <label> Cedula:</label>
-                <input type="number" class="form-control" name="edad">
-            </div>
-
-            
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> &nbsp Estudiante Regular
-                        </h4>
+                <div class="form-inline col-md-12">   
+                    <div class="form-group col-md-4 .col-md-offset-4">
+                        <label> Nacionalidad:</label>
+                        <select name="nacionalidades" id="" class="form-control">
+                            <option> --- </option>
+                            <option> Costa Rica </option>
+                            <option> Panamá </option>
+                        </select>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div>
-                                <label>Carrera:
-                                <input type="text" name="carrera">
-                            </div>
-                            <div>
-                                <label>Nivel:
-                                <input type="text" name="nivel">
-                            </div>
-                            <div>
-                                <label>Carnet:
-                                <input type="text" name="carnet">
-                            </div>
-                            <div>
-                                <input type="radio" name="tipo"><label> &nbsp Renovación.&nbsp
-                                <input type="radio" name="tipo"><label> &nbsp Solicitud
-                            </div>
-                        </div>
+
+                    <div class="form-group col-md-4">
+                        <label> Edad:</label>
+                        <input type="number" class="form-control" name="edad">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label> Sexo:</label>
+                        <input type="radio" class="form-inline" name="s" > &nbsp M &nbsp
+                        <input type="radio" class="form-inline" name="s" > &nbsp F
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> &nbsp Estudiante regular que solicita beca por 1 vez o estudiante regular que no está actualmente matriculado
-                        </h4>
+                <br><br><br>
+                <div class="form-inline">
+                    <div class="form-group col-md-6">
+                        <label> Estado Civil:</label>
+                        <select name="est_civil" class="form-control">
+                            <option> Soltero </option>
+                            <option> Casado </option>
+                            <option> Divorsiado </option>
+                            <option> Unión Libre </option>
+                            <option> Viudo (a) </option>
+                        </select>
                     </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div>
-                                <label>Carrera:
-                                <input type="text" name="carrera">
-                            </div>
-                            <div>
-                                <label>Nivel:
-                                <input type="text" name="nivel">
-                            </div>
-                            <div>
-                                <label>Carnet:
-                                <input type="text" name="carnet">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> &nbsp Estudiante de Primer Ingreso
-                        </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div>
-                                <label>Carrera:
-                                <input type="text" name="carrera">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div> 
-            </div>        
 
+                    <div class="form-group col-md-6">
+                        <label> Cedula:</label>
+                        <input type="number" class="form-control" name="edad">
+                    </div>
+                </div>
+                
+                <br> <br> <br>
+                
+                <div class="panel-group col-md-12 " id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> &nbsp Estudiante Regular
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div>
+                                    <label>Carrera:
+                                    <input type="text" name="carrera">
+                                </div>
+                                <div>
+                                    <label>Nivel:
+                                    <input type="text" name="nivel">
+                                </div>
+                                <div>
+                                    <label>Carnet:
+                                    <input type="text" name="carnet">
+                                </div>
+                                <div>
+                                    <input type="radio" name="tipo"><label> &nbsp Renovación. &nbsp
+                                    <input type="radio" name="tipo"><label> &nbsp Solicitud
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> &nbsp Estudiante regular que solicita beca por 1 vez o estudiante regular que no está actualmente matriculado
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div>
+                                    <label>Carrera:
+                                    <input type="text" name="carrera">
+                                </div>
+                                <div>
+                                    <label>Nivel:
+                                    <input type="text" name="nivel">
+                                </div>
+                                <div>
+                                    <label>Carnet:
+                                    <input type="text" name="carnet">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <input type="radio" name="rbn_desplegable" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> &nbsp Estudiante de Primer Ingreso
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div>
+                                    <label>Carrera:
+                                    <input type="text" name="carrera">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>     
+
+
+        <footer>
+            <p> Proyecto 1 - Administración de Sitios Web  <br>
+                Colegio Universitario de Cartago - Año 2017 </p>
+        </footer>
     </body>
-
-    <footer>
-        <p> Proyecto 1 - Administración de Sitios Web  <br>
-            Colegio Universitario de Cartago - Año 2017 </p>
-    </footer>
 
 </html>
