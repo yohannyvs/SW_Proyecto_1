@@ -1,25 +1,192 @@
 <html>
 
-    <hearder>
+    <header>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
         <title> Formulario de Becas - CUC </title>
-       <img src="./img/header2.jpg" id="baner">
-    </hearder>
+        <img src="./img/header2.jpg" id="baner">
+    </header>
 
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="form-group col-md-4">
+                        <label> Lugar de Trabajo:</label> &nbsp&nbsp
+                        <input type="text" class="form-control" name="edad">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label> Ocupación:</label> &nbsp&nbsp
+                        <input type="text" class="form-control" name="edad">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-12">Domicilio permanente(Lugar donde reside la familia)</label>
+                    <br><br>
+                    <div class="col-md-5">
+                        <div class="form-inline">
+                            <label> Provincia:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <select name="provincias" id="" class="form-control">
+                                <option> ----- </option>
+                                <option> ----- </option>
+                                <option> ----- </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Cantón:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <select name="canton" id="" class="form-control">
+                                <option> ----- </option>
+                                <option> ----- </option>
+                                <option> ----- </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Distrito:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <select name="distrito" id="" class="form-control">
+                                <option> ----- </option>
+                                <option> ----- </option>
+                                <option> ----- </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Dirección Exacta:</label> &nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="form-inline">
+                            <label> Teléfono Celular:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Teléfono de Casa:</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Teléfono de Pariente:</label> &nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Nombre del Pariente:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <div class="form-inline">
+                            <label> Domicilio en tiempo lectivo:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Telefono:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Colegio o Institución de Procedencia:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Disfrutó de beca en esa Institución:</label> &nbsp&nbsp&nbsp
+                            <select name="distrito" id="" class="form-control">
+                                <option> Si </option>
+                                <option> No </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label>Tipo de Beca:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Monto:</label> &nbsp&nbsp&nbsp
+                            <input type="numbre" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <br>
+                        <div class="form-inline">
+                            <label>¿Ha realizado estudios Universitarios o Parauniversitarios?:</label> &nbsp&nbsp&nbsp
+                            <select name="distrito" id="" class="form-control">
+                                <option> Si </option>
+                                <option> No </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label>Dónde:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label>Años Cursados:</label> &nbsp&nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label>Titulos Obtenidos:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label>Tipo de Beca:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Monto:</label> &nbsp&nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="colum-md-6">
+                        <br>
+                        <div class="form-inline">
+                            <label> Ha disfrutado o disfruta de beca en el CUC?:</label> &nbsp&nbsp&nbsp
+                            <select id="" class="form-control">
+                                <option> Si </option>
+                                <option> No </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-inline">
+                            <label> Tipo de Beca:</label> &nbsp&nbsp&nbsp
+                            <input type="text" class="form-control">
+                        </div>  
+                    </div>
+                    <br>
+                    <div class="colum-md-6">
+                        <br>
+                        <div class="form-inline">
+                            <label> Monto:</label> &nbsp&nbsp&nbsp
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>  
 
-        
-        
+         <footer>
+            <p> Proyecto 1 - Administración de Sitios Web  <br>
+                Colegio Universitario de Cartago - Año 2017 </p>
+        </footer>     
     </body>
-
-    <footer>
-        <p> Proyecto 1 - Administración de Sitios Web  <br>
-            Colegio Universitario de Cartago - Año 2017 </p>
-    </footer>
 </html>
