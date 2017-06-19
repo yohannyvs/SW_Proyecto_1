@@ -45,3 +45,10 @@ footer{
 p{
     text-align: justify-all;
 }
+
+.botones{
+    cursor: pointer;
+    border-radius: 15px;
+    float: right;
+    background-color: #2196F3;
+}
