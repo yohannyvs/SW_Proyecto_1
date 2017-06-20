@@ -1,5 +1,5 @@
 body{
-background-color: #D3D3D3 ;
+background-color: #F2F2F2 ;
 
 }
 
@@ -24,7 +24,7 @@ header{
 
 
 footer{
-    background-color: #D3D3D3 ;
+    background-color: #F2F2F2;
     width: 100%;
     float:left;
     clear: both;
@@ -39,7 +39,7 @@ footer{
 .desing{
     float: right;
     border-radius:15px;
-    background-color: #D3D3D3 ;
+    background-color: #C8C4C1;
 }
 
 p{
