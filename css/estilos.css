@@ -60,3 +60,7 @@ div.scroll {
     overflow: scroll;
 }
 
+div.color{
+  background-color: #6798BB;
+}
+
