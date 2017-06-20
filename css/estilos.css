@@ -59,3 +59,10 @@ div.scroll {
    height: 50px;
     overflow: scroll;
 }
+
+div.hidden {
+    
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
