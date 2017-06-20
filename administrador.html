@@ -16,16 +16,74 @@
     <body>
         <div class="container">
             <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Usuarios</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Becas</a></li>
+                </ul>
 
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <h3>HOME</h3>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="tab-content">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#insertar">Ingresar</a></li>
+                                <li><a data-toggle="tab" href="#modificar">Modificar</a></li>
+                                <li><a data-toggle="tab" href="#eliminar">Eliminar</a></li>
+                                <li><a data-toggle="tab" href="#buscar">Buscar</a></li>
+                            </ul>
+                            <div id="insertar" class="tab-pane fade">
+                                <h3>Ingrese los datos del Usuario:</h3>
+                                <br>
+                                <div class="form-inline">
+                                    <label class="col-md-1"> Carné:</label>
+                                    <input type="number" class="form-control">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    <label class="col-md-1"> Nombre:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <br>    
+                                <div class="form-inline">
+                                    <label class="col-md-1">Carrera:</label>
+                                    <select class="form-control" > 
+                                        <option value="">Tecnologias de Información</option>
+                                        <option value="">Electrónica</option>
+                                        <option value="">Investigación Criminal</option>
+                                        <option value="">Mecánica Dental</option>
+                                        <option value="">Turismo</option>
+                                    </select>
+                                </div>
+                                <div align="right">
+                                    <button type="button" class="btn btn-danger" >Guardar</button>
+                                </div>
+                            </div>
+                            <div id="modificar" class="tab-pane fade">
+                                <h3>Becas2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                            <div id="eliminar" class="tab-pane fade">
+                                <h3>Becas3</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                            <div id="buscar" class="tab-pane fade">
+                                <h3>Becas4</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                    <h3>Becas</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
   
-      <div align="right">
-               
-                <button type="button" class="btn btn-danger" >Guardar</button>
-                <button type="button" class="btn btn-info"onclick="window.location.href='./declaracion_jurada.html'" >Siguiente</button>
-            </div>
     <footer>
         <p> Proyecto 1 - Administración de Sitios Web  <br>
             Colegio Universitario de Cartago - Año 2017 </p>
