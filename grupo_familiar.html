@@ -21,7 +21,46 @@
             <h3>II GRUPO FAMILIAR:</h3>
             <p>En este cuadro debe anotar a <u> todas las personas que viven en la casa</u>,sean o no familia suya y debe incluirse usted: </p>
 
-            <table>
+            <div form-inline col-md-12>
+                <div class="form-group col-md-3">
+                    <label> Nombre Completo:</label>&nbsp
+                    <input type="text" class="form-control" name="nombre">
+                </div>
+                <div class="form-group col-md-3">
+                    <label> Cedula:</label>&nbsp
+                    <input type="text" class="form-control" name="nombre">
+                </div> 
+                <div class="form-group col-md-3">
+                    <label> Parentesco:</label>&nbsp
+                    <input type="text" class="form-control" name="nombre">
+                </div>              
+                <div class="form-group col-md-3">
+                    <label> Edad:</label>&nbsp
+                    <input type="number" class="form-control" name="nombre">
+                </div> 
+                <div class="form-group col-md-3">
+                    <label> Estado Civil:</label>&nbsp
+                    <select name="est_civil" class="form-control">
+                        <option> Soltero </option>
+                        <option> Casado </option>
+                        <option> Divorsiado </option>
+                        <option> Unión Libre </option>
+                        <option> Viudo (a) </option>
+                    </select>
+                </div> 
+                <div class="form-group col-md-3">
+                    <label> Ocupación:</label>&nbsp
+                    <input type="text" class="form-control" name="nombre">
+                </div> 
+                <div class="form-group col-md-3">
+                    <label> Monto:</label>&nbsp
+                    <input type="number" class="form-control" name="nombre">
+                </div> 
+            </div>
+
+            <br>
+            <div class="container">
+                <table>
                 <tr>
                     <th>Nombre</th>
                     <th>Cédula(Aunque sean menores de edad)</th>
@@ -44,7 +83,8 @@
                 </tr>
 
             </table>
-
+            </div>
+            <br><br>
             <div align="right">
                 <button type="button" class="btn btn-danger" >Guardar</button>
                 <button type="button" class="btn btn-info"onclick="window.location.href='./situacion_economica.html'" >Siguiente</button>
