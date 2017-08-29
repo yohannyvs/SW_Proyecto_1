@@ -9,8 +9,6 @@ header{
     height: 16%;
 }
 
-
-
 #baner
 {
     height: 80%;
@@ -21,12 +19,6 @@ header{
     width: 75%;
     margin: 0 auto;
     
-}
-
-.posicion
-{
-    position: absolute;
-    bottom: 0px;
 }
 
 footer{
