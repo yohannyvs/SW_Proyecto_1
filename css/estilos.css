@@ -10,6 +10,7 @@ header{
 }
 
 
+
 #baner
 {
     height: 80%;
@@ -22,6 +23,11 @@ header{
     
 }
 
+.posicion
+{
+    position: absolute;
+    bottom: 0px;
+}
 
 footer{
     background-color: #F2F2F2;
@@ -29,11 +35,12 @@ footer{
     float:left;
     clear: both;
     box-shadow: 0px 2px 2px #000; 
-      border-radius:5px;
-      text-align: center;
-      color:#000;
-      margin-top: 2%;
-      
+    border-radius:5px;
+    text-align: center;
+    color:#000;
+    margin-top: 2%;
+    position: absolute;
+    bottom: 0px;
 }
 
 .desing{
@@ -60,7 +67,56 @@ div.scroll {
     overflow: scroll;
 }
 
+table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
 div.color{
   background-color: #6798BB;
 }
 
+/*Estas sentecias funcionan limitando resoluciones asi que para organizar todo es mejor empezar desde la mas baja a la mas alta */
+
+@media screen and (max-width: 435px) { /* se establece que de 0 a 435px la clase celular se va a mostrar y se ocultan las otras clases*/
+  .computador {
+    display: none !important;
+     
+  }
+    .tablet {
+    display: none;
+        }
+   
+}
+
+@media screen and (min-width: 768px) {/* se establece que de 435 a 768px la clase tablet se va a mostrar y se ocultan las otras clases*/
+   .celular {
+    display: none;
+    height: 100%;
+     
+  }
+    .computador{
+      display: none;  
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px){ /* se establece que de768 a 1024px la clase tablet se va a mostrar y se ocultan las otras clases*/
+ .tablet {
+    display: none;
+        }
+  .celular {
+    display: none;
+     
+  }
+    .computador{
+       display: block; 
+    }
+}
